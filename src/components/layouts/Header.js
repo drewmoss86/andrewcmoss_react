@@ -23,10 +23,10 @@ export default class Header extends Component {
 							<Nav.Link href="/work">My Work</Nav.Link>
 						</Nav.Item>
 						<Nav.Item>
-							<Nav.Link href="#dogs">Dogs</Nav.Link>
+							<Nav.Link href="/dogs">Dogs</Nav.Link>
 						</Nav.Item>
 						<Nav.Item>
-							<Nav.Link href="#contact">Contact</Nav.Link>
+							<Nav.Link href="/contact">Contact</Nav.Link>
 						</Nav.Item>
 					</Nav>
 				</Navbar.Collapse>

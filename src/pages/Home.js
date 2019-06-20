@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Jumbotron } from 'react-bootstrap';
+import Background from '..img/ocean-sunset-golden-hr.jpg';
 
 export default class Home extends Component {
 	render() {
