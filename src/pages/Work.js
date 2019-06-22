@@ -4,7 +4,7 @@ export default class Work extends Component {
 	render() {
 		return (
 			<div className="container">
-				<h1>My Work</h1>
+				<h2>My Work</h2>
 				<p>This section is about my work.</p>
 
 				<p>Resume here</p>
