@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import Lola from '../img/lola/Lola_Bath_1.JPG';
-import Yoda from '../img/yoda/Yoda_1.JPG';
 
 export default class Dogs extends Component {
 	render() {
@@ -22,13 +20,13 @@ export default class Dogs extends Component {
 						</ol>
 						<div className="carousel-inner">
 							<div id="yodaCarousel-1" className="carousel-item active">
-								<img className="d-block w-100 h-100" src={require('../img/yoda/Yoda_1.JPG')} alt="First slide" height="397" width="260" style={{transform: 'rotate(90deg)'}} />
+								<img className="d-block w-100" src={require('../img/yoda/Yoda_1.JPG')} alt="First slide" />
 							</div>
 							<div id="yodaCarousel-2" className="carousel-item">
-								<img className="d-block w-100 h-100" src={require('../img/yoda/Yoda_2.JPG')} alt="Second slide" height="397" width="260" style={{transform: 'rotate(90deg)'}} />
+								<img className="d-block w-100" src={require('../img/yoda/Yoda_2.JPG')} alt="Second slide" />
 							</div>
 							<div id="yodaCarousel-3" className="carousel-item">
-								<img className="d-block w-100 h-100" src={require('../img/yoda/Yoda_3.JPG')} alt="Third slide" height="397" width="260" style={{transform: 'rotate(90deg)'}} />
+								<img className="d-block w-100" src={require('../img/yoda/Yoda_3.JPG')} alt="Third slide" />
 							</div>
 						</div>
 						<a className="carousel-control-prev" href="#yodaCarousel" role="button" data-slide="prev">
@@ -41,10 +39,10 @@ export default class Dogs extends Component {
 						</a>
 					</div>
 				</div>
-
+				<br />
 				<div className="container">
 					<p>Lola</p>
-					<div id="lolaCarousel" className="carousel slide" data-ride="carousel" data-interval="false">
+					<div id="lolaCarousel" className="carousel slide" data-ride="carousel">
 						<ol className="carousel-indicators">
 							<li data-target="#lolaCarousel" data-slide-to="0" className="active"></li>
 							<li data-target="#lolaCarousel" data-slide-to="1"></li>
@@ -52,13 +50,13 @@ export default class Dogs extends Component {
 						</ol>
 						<div className="carousel-inner">
 							<div id="lolaCarousel-1" className="carousel-item active">
-								<img className="d-block w-100 h-100" src={require('../img/lola/Lola_Bath_1.JPG')} alt="First slide" height="397" width="260" style={{transform: 'rotate(90deg)'}} />
+								<img className="d-block w-100" src={require('../img/lola/Lola_Bath_1.JPG')} alt="First slide" />
 							</div>
 							<div id="lolaCarousel-2" className="carousel-item">
-								<img className="d-block w-100 h-100" src={require('../img/lola/Lola_Bath_2.JPG')} alt="Second slide" height="397" width="260" style={{transform: 'rotate(90deg)'}} />
+								<img className="d-block w-100" src={require('../img/lola/Lola_Bath_2.JPG')} alt="Second slide" />
 							</div>
 							<div id="lolaCarousel-3" className="carousel-item">
-								<img className="d-block w-100 h-100" src={require('../img/lola/Lola_Bath_3.JPG')} alt="Third slide" height="397" width="260" style={{transform: 'rotate(90deg)'}} />
+								<img className="d-block w-100" src={require('../img/lola/Lola_Bath_3.JPG')} alt="Third slide" />
 							</div>
 						</div>
 						<a className="carousel-control-prev" href="#lolaCarousel" role="button" data-slide="prev">
@@ -70,6 +68,7 @@ export default class Dogs extends Component {
 							<span className="sr-only">Next</span>
 						</a>
 					</div>
+					<br />
 				</div>				
 			</div>
 		)

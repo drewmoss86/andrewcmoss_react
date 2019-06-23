@@ -8,14 +8,14 @@ import About from './pages/About';
 import Work from './pages/Work';
 import Dogs from './pages/Dogs';
 import Log from './pages/Log';
-import Contact from './components/contacts/Contact';
+import Contact from './components/contacts/contact';
 
 import './App.css';
 
 export default  class App extends Component {
   render() {
     return (
-			<HRouter>
+			<BRouter>
 				<div className="App">
 					<div className="content">
 						<Route exact path="/" component={Home}/>
@@ -27,7 +27,7 @@ export default  class App extends Component {
 						<Route path="/contact" component={Contact} />
 					</div>
 				</div>
-			</HRouter>
+			</BRouter>
     );
   }
 

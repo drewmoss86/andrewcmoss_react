@@ -1,15 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import uuid from 'uuid';
+import axios from 'axios';
 export default class Contact extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			contacts: [
-				name => "",
-				organization => "",
-				email => "",
-				phone => "",
-				message => ""
+				name => '',
+				organization => '',
+				email => '',
+				phone => '',
+				message => ''
 			]
 
 		}
@@ -21,36 +22,51 @@ export default class Contact extends Component {
 		.then(contacts => this.setState({contacts}, () => console.log("Contacts fetched...", contacts)))
 	}
 
-	addContact(name, organization, email, phone, message) {
-		const newContact = {
-			id: uuid.v4(),
-			name,
-			organization,
-			email, 
-			phone, 
-			message
-		}
+	// addContact(name, organization, email, phone, message) {
+	// 	const newContact = {
+	// 		id: uuid.v4(),
+	// 		name,
+	// 		organization,
+	// 		email, 
+	// 		phone, 
+	// 		message
+	// 	}
 
-		this.setState({ contacts: [...this.state.contacts, newContact] })
-	}
+	// 	this.setState({ contacts: [...this.state.contacts, newContact] })
+	// }
 
 	onSubmit = e => {
 		e.preventDefault(); //prevent from actual submit for testing
-	  this.addContact(this.state.name, this.state.organization, this.state.email, this.state.phone, this.state.message);
+	  // this.addContact(this.state.name, this.state.organization, this.state.email, this.state.phone, this.state.message);
 
-		console.log("NAME:" + this.state.name);
-		console.log("ORG:" + this.state.organization);
-		console.log("EMAIL:" + this.state.email);
-		console.log("PHONE:" + this.state.phone);
-		console.log("MESSAGE:" + this.state.message);
+		console.log(`NAME: ${this.state.name}`);
+		console.log(`ORG: ${this.state.organization}`);
+		console.log(`EMAIL: ${this.state.email}`);
+		console.log(`PHONE: ${this.state.phone}`);
+		console.log(`MESSAGE: ${this.state.message}`);
+
+		const newContact = {
+			id: uuid.v4(),
+			name: this.state.name,
+			organization: this.state.organization,
+			email: this.state.email, 
+			phone: this.state.phone, 
+			message: this.state.message
+		}		
+
+		axios.post('/contact/add', newContact)
+			.then(res => console.log(res.data));
 
 
 		//clear fields after submission
-		this.setState({ name: "" });
-		this.setState({ organization: "" });
-		this.setState({ email: "" });
-		this.setState({ phone: "" });
-		this.setState({ message: ""});
+		this.setState({ 
+			name: '', 
+			organization: '', 
+			email: '', 
+			phone: '', 
+			message: '' 
+		});
+
 	}
 
 	onChange = e => this.setState({[e.target.name]: e.target.value});
@@ -61,7 +77,7 @@ export default class Contact extends Component {
 				<h1>Contact Me</h1>
 				<br />
 				<div className="container contact-form">
-					<form onSubmit={this.onSubmit}>
+					<form onSubmit={this.onSubmit} method="post" action="/add">
 						<div className="row">
 							<div className="col-md-6">
 								<div className="form-group">
@@ -88,11 +104,11 @@ export default class Contact extends Component {
 						</div>
 					</form>
 				</div>
-				<ul>
+				{/* <ul>
 					{this.state.contacts.map(contact => 
 						<li key={contact.id}> {contact.id} | {contact.name} | {contact.organization} | {contact.email} | {contact.phone} | {contact.message} </li>
 					)}
-				</ul>
+				</ul> */}
 			</div>
 		)
 	}
