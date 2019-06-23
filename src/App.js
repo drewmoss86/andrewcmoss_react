@@ -8,15 +8,11 @@ import About from './pages/About';
 import Work from './pages/Work';
 import Dogs from './pages/Dogs';
 import Log from './pages/Log';
-import Contact from './pages/Contact';
+import Contact from './components/contacts/Contact';
 
 import './App.css';
 
 export default  class App extends Component {
-	constructor() {
-    super();
-
-	}
   render() {
     return (
 			<HRouter>
