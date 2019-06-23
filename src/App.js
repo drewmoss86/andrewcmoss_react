@@ -3,12 +3,12 @@ import { BrowserRouter as BRouter, Route, HashRouter as HRouter } from 'react-ro
 
 import Navbar from './components/Header';
 
-import Home from './pages/Home';
-import About from './pages/About';
-import Work from './pages/Work';
-import Dogs from './pages/Dogs';
-import Log from './pages/Log';
-import Contact from './components/contacts/contact';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Work from './components/pages/Work';
+import Dogs from './components/pages/Dogs';
+import Log from './components/pages/Log';
+import Contact from './components/pages/Contact';
 
 import './App.css';
 

@@ -12,27 +12,13 @@ export default class Contact extends Component {
 				phone => '',
 				message => ''
 			]
-
 		}
 	}
 
-	componentDidMount() {
-		fetch('/api/contacts') //access route from express
-		.then(res => res.json())
-		.then(contacts => this.setState({contacts}, () => console.log("Contacts fetched...", contacts)))
-	}
-
-	// addContact(name, organization, email, phone, message) {
-	// 	const newContact = {
-	// 		id: uuid.v4(),
-	// 		name,
-	// 		organization,
-	// 		email, 
-	// 		phone, 
-	// 		message
-	// 	}
-
-	// 	this.setState({ contacts: [...this.state.contacts, newContact] })
+	// componentDidMount() {
+	// 	fetch('/api/contacts') //access route from express
+	// 	.then(res => res.json())
+	// 	.then(contacts => this.setState({contacts}, () => console.log("Contacts fetched...", contacts)))
 	// }
 
 	onSubmit = e => {
@@ -77,7 +63,7 @@ export default class Contact extends Component {
 				<h1>Contact Me</h1>
 				<br />
 				<div className="container contact-form">
-					<form onSubmit={this.onSubmit} method="post" action="/add">
+					<form onSubmit={this.onSubmit} action="/add">
 						<div className="row">
 							<div className="col-md-6">
 								<div className="form-group">
@@ -104,11 +90,6 @@ export default class Contact extends Component {
 						</div>
 					</form>
 				</div>
-				{/* <ul>
-					{this.state.contacts.map(contact => 
-						<li key={contact.id}> {contact.id} | {contact.name} | {contact.organization} | {contact.email} | {contact.phone} | {contact.message} </li>
-					)}
-				</ul> */}
 			</div>
 		)
 	}

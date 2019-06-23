@@ -20,13 +20,13 @@ export default class Dogs extends Component {
 						</ol>
 						<div className="carousel-inner">
 							<div id="yodaCarousel-1" className="carousel-item active">
-								<img className="d-block w-100" src={require('../img/yoda/Yoda_1.JPG')} alt="First slide" />
+								<img className="d-block w-100" src={require('../../img/yoda/Yoda_1.JPG')} alt="First slide" />
 							</div>
 							<div id="yodaCarousel-2" className="carousel-item">
-								<img className="d-block w-100" src={require('../img/yoda/Yoda_2.JPG')} alt="Second slide" />
+								<img className="d-block w-100" src={require('../../img/yoda/Yoda_2.JPG')} alt="Second slide" />
 							</div>
 							<div id="yodaCarousel-3" className="carousel-item">
-								<img className="d-block w-100" src={require('../img/yoda/Yoda_3.JPG')} alt="Third slide" />
+								<img className="d-block w-100" src={require('../../img/yoda/Yoda_3.JPG')} alt="Third slide" />
 							</div>
 						</div>
 						<a className="carousel-control-prev" href="#yodaCarousel" role="button" data-slide="prev">
@@ -50,13 +50,13 @@ export default class Dogs extends Component {
 						</ol>
 						<div className="carousel-inner">
 							<div id="lolaCarousel-1" className="carousel-item active">
-								<img className="d-block w-100" src={require('../img/lola/Lola_Bath_1.JPG')} alt="First slide" />
+								<img className="d-block w-100" src={require('../../img/lola/Lola_Bath_1.JPG')} alt="First slide" />
 							</div>
 							<div id="lolaCarousel-2" className="carousel-item">
-								<img className="d-block w-100" src={require('../img/lola/Lola_Bath_2.JPG')} alt="Second slide" />
+								<img className="d-block w-100" src={require('../../img/lola/Lola_Bath_2.JPG')} alt="Second slide" />
 							</div>
 							<div id="lolaCarousel-3" className="carousel-item">
-								<img className="d-block w-100" src={require('../img/lola/Lola_Bath_3.JPG')} alt="Third slide" />
+								<img className="d-block w-100" src={require('../../img/lola/Lola_Bath_3.JPG')} alt="Third slide" />
 							</div>
 						</div>
 						<a className="carousel-control-prev" href="#lolaCarousel" role="button" data-slide="prev">

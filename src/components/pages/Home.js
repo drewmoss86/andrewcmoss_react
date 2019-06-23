@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Jumbotron } from 'react-bootstrap';
 // import Background from '../img/ocean-sunset-golden-hr.jpg';
-import Background from '../img/beach-sunset.jpg';
+import Background from '../../img/beach-sunset.jpg';
 
 export default class Home extends Component {
 	render() {
