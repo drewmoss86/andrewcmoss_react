@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as BRouter, Route, HashRouter as HRouter } from 'react-router-dom';
+import { BrowserRouter as BRouter, Route } from 'react-router-dom';
 
 import Navbar from './components/Header';
 
@@ -7,7 +7,7 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Work from './components/pages/Work';
 import Dogs from './components/pages/Dogs';
-import Log from './components/pages/Log';
+import Log from './components/pages/Logs';
 import Contact from './components/pages/Contact';
 
 import AddLog from './components/logs/AddLog';

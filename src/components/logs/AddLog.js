@@ -3,38 +3,52 @@ import React, { Component } from 'react';
 import uuid from 'uuid';
 import axios from 'axios';
 import Background from '../../img/header/home-bg.jpg'
-import AddPostIcon from '../../icons/plus-circle-blue.svg'
 
 export default class AddLog extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
 			log: [
+				id => '',
 				title => '',
-				body => ''
+				body => '',
+				date => ''
 			] 
 		}
 	}
 
 	onSubmit = e => {
-		e.preventDefault();
+		//date
+		const today = new Date();
+		const month = today.toLocaleString('en-us', { month: 'long' });
+		const day = today.getDate();
+		const year = today.getFullYear();
 
-		console.log(`TITLE: ${this.state.title}`);
-		console.log(`BODY: ${this.state.body}`);
+		const logDate = month + ' ' + day + ', ' + year;
+
+		e.preventDefault();
 
 		const newLog = {
 			id: uuid.v4(),
 			title: this.state.title,
-			body: this.state.body
+			body: this.state.body,
+			date: logDate
 		}
+
+		console.log(`ID: ${this.state.id}`);
+		console.log(`TITLE: ${this.state.title}`);
+		console.log(`BODY: ${this.state.body}`);
+		console.log(`DATE: ${logDate}`);
 
 		axios.post('/log/add', newLog)
 		.then(res => console.log(res.data));
 
 		//clear the fields after submission
 		this.setState({
+			id: '',
 			title: '',
-			body: ''
+			body: '',
+			date: ''
 		});
 
 	}
@@ -44,23 +58,11 @@ export default class AddLog extends Component {
 	render() {
 		return (
 				<div id="addLog" className="addLog">
-					<header className="masthead" style={logHeaderStyle}>
-						<div className="overlay">
-							<div className="container">	
-								<div className="row">
-									<div className="col-lg-8 col-md-10 mx-auto">
-										<div className="site-heading">
-											<h1 className="display-4">Captain's Log</h1>
-											<span className="subheading">A Blog Theme by Start Bootstrap</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</header>	
+					<header className="masthead" style={logHeaderStyle}></header>	
 					<div className="row text-black">
 						<div className="col-sm-6 offset-sm-3 text-center">
-							
+							<br />
+							<h1 className="display-4">Captain's Log</h1>
 							<br />
 							<form onSubmit={this.onSubmit} action="/add" className="justify-content-center">
 								<div className="form-group">
@@ -100,17 +102,4 @@ const logHeaderStyle = {
 	padding: '156px 0 100px',
 	backgroundRepeat: 'no-repeat',
 	backgroundSize: 'cover',
-}
-
-const postTitleStyle = {
-	color: 'black'
-}
-
-const postSubtitleStyle = {
-	color: 'black'
-}
-
-const addPostIconStyle = {
-	width: '80px',
-	height: '80px'
 }

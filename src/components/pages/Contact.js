@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import uuid from 'uuid';
+// import uuid from 'uuid';
 import axios from 'axios';
 import Background from '../../img/header/cellphone-1786x358.jpg';
 
@@ -34,7 +34,6 @@ export default class Contact extends Component {
 		console.log(`MESSAGE: ${this.state.message}`);
 
 		const newContact = {
-			id: uuid.v4(),
 			name: this.state.name,
 			organization: this.state.organization,
 			email: this.state.email, 
@@ -44,7 +43,6 @@ export default class Contact extends Component {
 
 		axios.post('/contact/add', newContact)
 			.then(res => console.log(res.data));
-
 
 		//clear fields after submission
 		this.setState({ 
@@ -75,7 +73,6 @@ export default class Contact extends Component {
 						</div>
 					</div>
 				</header>	
-				<br />
 				<h1 className="display-4">Contact Me</h1>
 				<br />
 				<div className="container contact-form">
@@ -83,21 +80,21 @@ export default class Contact extends Component {
 						<div className="row">
 							<div className="col-md-6">
 								<div className="form-group">
-									<input type="text" name="name" className="form-control" placeholder="Enter your name*" value={this.state.name} onChange={this.onChange} required /> <br />
+									<input type="text" name="name" className="form-control" placeholder="Enter your name*" value={this.state.name || ''} onChange={this.onChange} required /> <br />
 								</div>
 								<div className="form-group">
-									<input type="text" name="organization" className="form-control" placeholder="Enter your company name" value={this.state.organization} onChange={this.onChange} /> <br />
+									<input type="text" name="organization" className="form-control" placeholder="Enter your company name" value={this.state.organization || ''} onChange={this.onChange} /> <br />
 								</div>
 								<div className="form-group">
-									<input type="email" name="email" className="form-control" placeholder="Enter your email*" value={this.state.email} onChange={this.onChange} required /> <br />
+									<input type="email" name="email" className="form-control" placeholder="Enter your email*" value={this.state.email || ''} onChange={this.onChange} required /> <br />
 								</div>
 								<div className="form-group">
-									<input type="tel" name="phone" className="form-control" placeholder="Enter your phone" value={this.state.phone} onChange={this.onChange} /> <br />	
+									<input type="tel" name="phone" className="form-control" placeholder="Enter your phone" value={this.state.phone || ''} onChange={this.onChange} /> <br />	
 								</div>
 							</div>				
 							<div className="col-md-6">
 								<div className="form-group">
-								<textarea name="message" className="form-control" placeholder="Enter your message*" value={this.state.message} onChange={this.onChange} style={textAreaStyle} required ></textarea>
+								<textarea name="message" className="form-control" placeholder="Enter your message*" value={this.state.message || ''} onChange={this.onChange} style={textAreaStyle} required ></textarea>
 								</div>
 							</div>
 						</div>

@@ -5,31 +5,18 @@ export default class About extends Component {
 	render() {
 		return (
 			<div id="about" className="about">
-				<header className="masthead" style={logHeaderStyle}>
-					<div className="overlay">
-						<div className="container">
-							<div className="row">
-								<div className="col-lg-8 col-md-10 mx-auto">
-									<div className="site-heading">
-										<h1 className="display-4" style={{color: 'white'}}>About</h1>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</header>	
+				<header className="masthead" style={headerStyle}></header>	
+				<h1 className="display-4">About Me</h1>
 				<br />
-				<p>
-
-				</p>
+				<p>	He passion for technology, science fiction, eating, traveling, IPAs, and learning as much as possible. </p> 					
 			</div>
 		)
 	}
 }
 
-const logHeaderStyle = {
+const headerStyle = {
+	padding: '250px 0 100px',
 	backgroundImage: `url(${Background})`,
-	padding: '156px 0 100px',
 	backgroundRepeat: 'no-repeat',
 	backgroundSize: 'cover',
 }
