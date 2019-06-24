@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Background from '../../img/log-header/home-bg.jpg'
+import Background from '../../img/header/home-bg.jpg'
 
 export default class LogItem extends Component {
 	render() {

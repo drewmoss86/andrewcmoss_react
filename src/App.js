@@ -25,7 +25,7 @@ export default  class App extends Component {
 						<Route exact path="/" component={Home}/>	
 						<Route path="/about" component={About} />
 						<Route path="/work" component={Work} />
-						{/* <Route path="/log" component={Log} /> */}
+						<Route path="/log" component={Log} />
 						<Route path="/addLog" component={AddLog} />
 						<Route path="/logItem" component={LogItem} />
 						<Route path="/dogs" component={Dogs} />

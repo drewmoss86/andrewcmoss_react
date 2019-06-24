@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import CKEditor from 'ckeditor4-react';
 import uuid from 'uuid';
 import axios from 'axios';
-import Background from '../../img/log-header/home-bg.jpg'
+import Background from '../../img/header/home-bg.jpg'
 import AddPostIcon from '../../icons/plus-circle-blue.svg'
 
 export default class AddLog extends Component {
@@ -46,11 +46,11 @@ export default class AddLog extends Component {
 				<div id="addLog" className="addLog">
 					<header className="masthead" style={logHeaderStyle}>
 						<div className="overlay">
-							<div className="container">
+							<div className="container">	
 								<div className="row">
 									<div className="col-lg-8 col-md-10 mx-auto">
 										<div className="site-heading">
-											<h1>Clean Blog</h1>
+											<h1 className="display-4">Captain's Log</h1>
 											<span className="subheading">A Blog Theme by Start Bootstrap</span>
 										</div>
 									</div>
@@ -60,7 +60,7 @@ export default class AddLog extends Component {
 					</header>	
 					<div className="row text-black">
 						<div className="col-sm-6 offset-sm-3 text-center">
-							<h1 className="display-4">Captain's Log</h1>
+							
 							<br />
 							<form onSubmit={this.onSubmit} action="/add" className="justify-content-center">
 								<div className="form-group">

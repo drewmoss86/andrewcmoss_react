@@ -13,22 +13,22 @@ export default class Header extends Component {
 				<Navbar.Collapse id="responsive-navbar-nav">		
 					<Nav className="ml-auto">
 						<Nav.Item style={navItemStyle}>
-							<NavLink exact to="/" className="home">Home</NavLink> &nbsp;    
+							<NavLink style={navLinkStyle} exact to="/" className="home">Home</NavLink> &nbsp;    
 						</Nav.Item>
 						<Nav.Item style={navItemStyle}>
-							<NavLink to="/about" className="about">About</NavLink> &nbsp;  
+							<NavLink style={navLinkStyle} to="/about" className="about">About</NavLink> &nbsp;  
 						</Nav.Item>
 						<Nav.Item style={navItemStyle}>
-							<NavLink to="/log" className="log">Captain's Log</NavLink> &nbsp;  
+							<NavLink style={navLinkStyle} to="/log" className="log">Captain's Log</NavLink> &nbsp;  
 						</Nav.Item>
 						<Nav.Item style={navItemStyle}>
-							<NavLink to="/work">My Work</NavLink> &nbsp;   
+							<NavLink style={navLinkStyle} to="/work">My Work</NavLink> &nbsp;   
 						</Nav.Item>
 						<Nav.Item style={navItemStyle}>
-							<NavLink to="/dogs">My Dogs</NavLink> &nbsp;   
+							<NavLink style={navLinkStyle} to="/dogs">My Dogs</NavLink> &nbsp;   
 						</Nav.Item>
 						<Nav.Item style={navItemStyle}>
-							<NavLink to="/contact">Contact</NavLink> &nbsp;   
+							<NavLink style={navLinkStyle} to="/contact">Contact</NavLink> &nbsp;   
 						</Nav.Item>
 					</Nav>
 				</Navbar.Collapse>
@@ -39,5 +39,9 @@ export default class Header extends Component {
 
 const navItemStyle = {
 	marginLeft: '10px',
-	marginRight: '10px'
+	marginRight: '10px',
+}
+
+const navLinkStyle = {
+	color: 'gray'
 }

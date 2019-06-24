@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import uuid from 'uuid';
 import axios from 'axios';
+import Background from '../../img/header/cellphone-1786x358.jpg';
+
 export default class Contact extends Component {
 	constructor(props) {
 		super(props);
@@ -59,8 +61,22 @@ export default class Contact extends Component {
 
 	render() {
 		return (
-			<div className="container">
-				<h1>Contact Me</h1>
+			<div id="contact" className="contact">
+				<header className="masthead" style={headerStyle}>
+					<div className="overlay">
+						<div className="container">
+							<div className="row">
+								<div className="col-lg-8 col-md-10 mx-auto">
+									<div className="site-heading">
+										{/* <h1 className="display-4">Contact Me</h1> */}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>	
+				<br />
+				<h1 className="display-4">Contact Me</h1>
 				<br />
 				<div className="container contact-form">
 					<form onSubmit={this.onSubmit} action="/add">
@@ -86,13 +102,20 @@ export default class Contact extends Component {
 							</div>
 						</div>
 						<div className="form-group">
-							<input type="submit" name="submit" className="btn btn-primary" value="Submit" />
+							<input type="submit" name="submit" className="btn btn-primary" style={{width: '100px'}} value="Submit" />
 						</div>
 					</form>
 				</div>
 			</div>
 		)
 	}
+}
+
+const headerStyle = {
+	padding: '250px 0 100px',
+	backgroundImage: `url(${Background})`,
+	backgroundRepeat: 'no-repeat',
+	backgroundSize: 'cover',
 }
 
 const textAreaStyle = {
