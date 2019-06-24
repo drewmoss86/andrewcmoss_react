@@ -4,7 +4,7 @@ export default class Dogs extends Component {
 	render() {
 		return (
 			<div className="container">
-				<h1>My Dogs</h1>
+				<h1 className="display-4">My Dogs</h1>
 				<p>
 					<em>These are my dogs. There are many like them, but these are mine. <br />
 					My dogs are my best friends. They are my life. I must master them as I must master my life. <br />

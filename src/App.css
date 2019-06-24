@@ -17,16 +17,11 @@
   color: #61dafb;
 }
 
-.active {
-  /* background-color: #0099FF; */
-	border-bottom: 1px solid black;
-
-} 
-
 .nav-item {
 	color: white;
 }
 
-html {
+html, body {
 	scroll-behavior: smooth;
+	font-family: 'Ubuntu', sans-serif;
 }
