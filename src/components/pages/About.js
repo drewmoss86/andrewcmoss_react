@@ -1,23 +1,20 @@
 import React, { Component } from 'react'
-import Background from '../../img/header/action-ai-device-1786x358.jpg'
+// import Background from '../../img/header/action-ai-device-1786x358.jpg'
 
 export default class About extends Component {
 	render() {
 		return (
-			<div id="about" className="about">
-				<header className="masthead" style={headerStyle}></header>	
+			<section id="about" className="about">
 				<h1 className="display-4">About Me</h1>
 				<br />
-				<p>	He passion for technology, science fiction, eating, traveling, IPAs, and learning as much as possible. </p> 					
-			</div>
+				<p>Welcome to my website!</p>
+				<p>This was website built entirely with JavaScript, utilizing the MERN stack</p>
+				<p>Please feel free to roam about the cabin, but it is still in progress so some items may shift during flight</p>		
+
+				<p>	He passion for technology, science fiction, eating, traveling, IPAs, and learning as much as possible. </p> 
+			</section>
 		)
 	}
 }
 
-const headerStyle = {
-	padding: '250px 0 100px',
-	backgroundImage: `url(${Background})`,
-	backgroundRepeat: 'no-repeat',
-	backgroundSize: 'cover',
-}
 

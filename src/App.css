@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -15,24 +15,26 @@
 
 .App-link {
   color: #61dafb;
-}
+} */
 
+* {
+	margin: 0;
+	padding: 0;
+}
 .nav-item {
 	color: white;
 }
 
-html, body {
+body {
 	scroll-behavior: smooth;
 	font-family: 'Ubuntu', sans-serif;
 	height: 100vh;
+	line-height: 1.6;
+	/* background: #333; */
 }
 
 a.resumeLink:hover {
 	text-decoration: none;
-}
-
-.masthead {
-	padding-bottom: 50px;
 }
 
 .home-intro {
@@ -51,50 +53,50 @@ section {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 	width: 100%;
 	height: 100vh;
 }
 
-#dogs-navbar {
+#myDogsCarousel {
+	width: 400px;
+	margin: 0 auto;
+}
+
+/* #dogs-navbar {
 	z-index: 1;
 	display: flex;
 	width: 100%;
 	height: 60px;
-	/* background: tan; */
+	/* background: tan;
+} */
+
+.content {
+	width: 100% !important;
+	height: 100vh;
+	/* max-width: 100%; */
 }
 
-.navbar ul {
-	display: flex;
-	list-style: none;
-	width: 100%;
-	justify-content: center;
+#dogs {
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
 }
 
-.navbar ul li {
-	margin: 0 1rem;
-	padding: 1rem;
+#lola, #yoda {
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
 }
 
-.navbar ul li a {
-	text-decoration: none;
-	text-transform: uppercase;
-	color: gray;
-}
-
-.navbar ul li a:hover {
-	color: skyblue;
-}
-/* Homepage header animation */
-
-ul.after-fly-in-text, ul.fly-in-text {
-	display: flex;
-	margin: 0;
-	padding: 0 0 100px 0;
-}
-
-.after-fly-in-text,.fly-in-text {
-	color: white;
-	list-style: none;
+.about {
+	text-align: center;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -103,7 +105,86 @@ ul.after-fly-in-text, ul.fly-in-text {
 	-moz-transform: translateX(-50%) translateY(-50%);
 }
 
-.after-fly-in-text li, .fly-in-text li {
+#about {
+	position: relative;
+}
+
+.home {
+	background: url('./img/section-bkgrd/eclipse.jpg') no-repeat center center/cover;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.home p {
+	color: #fff;
+}
+
+.work {
+	
+}
+
+nav.dogs {
+	position: relative;
+	background-color: tan;
+}
+.navbar {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	width: 100%;
+	height: 60px;
+	background-color: rgba(0,0,0,0.7) !important;
+}
+
+.display-4 {
+	padding-bottom: 20px;
+}
+#dropdown-basic {
+	/* background: #fff; */
+}
+
+.navbar ul {
+	display: flex;
+	list-style: none;
+	width: 100%;
+	justify-content: center; 
+}
+.navbar ul li {
+	margin: 0 1rem;
+	padding: 1rem;
+}
+
+.navbar ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #f4f4f4;
+}
+
+.navbar ul li a:hover {
+	color: skyblue !important;
+}
+/* Homepage header animation */
+
+ul.fly-in-text {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.fly-in-text {
+	color: white;
+	list-style: none;
+	/* Center text in middle of screen dynamically  */
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+}
+
+.fly-in-text li {
 	display: inline-block;
 	margin-right: 50px;
 	font-family: 'Ubuntu', sans-serif;
@@ -115,7 +196,7 @@ ul.after-fly-in-text, ul.fly-in-text {
 	margin: 0;
 }
 
-.after-fly-in-text li:last-child, .fly-in-text li:last-child {
+.fly-in-text li:last-child {
 	margin-right: 0;
 }
 

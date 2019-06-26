@@ -93,6 +93,7 @@ export default class AddLog extends Component {
 						</div>
 					</div>
 				</div>
+
 		)
 	}
 }
