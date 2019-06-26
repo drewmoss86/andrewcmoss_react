@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as BRouter, Route } from 'react-router-dom';
+import { BrowserRouter as BRouter } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
+// import Smooth from './assets/smooth';
+import FlyIn from './assets/animation';
+
 
 import Home from './components/pages/Home';
 import About from './components/pages/About';
@@ -33,13 +36,13 @@ export default  class App extends Component {
 						{/* <Link path="/log" component={Log} />
 						<Link path="/addLog" component={AddLog} /> */}
 						{/* <Link path="/logItem" component={LogItem} /> */}
-							<Home />
-							<About />
-							<Work />
-							<Dogs />
-								<Yoda />
-								<Lola />
-							<Contact />
+						<Home />
+						<About />
+						<Work />
+						<Dogs />
+							<Yoda />
+							<Lola />
+						<Contact />
 					</div>
 				</div>
 			</BRouter>

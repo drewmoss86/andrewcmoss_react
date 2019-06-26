@@ -4,7 +4,7 @@ export default class Lola extends Component {
 	render() {
 		return (
 			<section id="lola">
-				<div className="container dogs-carousel">
+				<div className="dogs-carousel">
 					<h3>Lola</h3>
 					<div className="container">
 						<div id="myDogsCarousel" className="carousel slide" data-ride="carousel">

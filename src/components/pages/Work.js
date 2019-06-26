@@ -8,7 +8,7 @@ import Resume from '../../files/AMResume062019_HH_IllustFormat.pdf';
 export default class Work extends Component {
 	render() {
 		return (
-			<section id="work" className="container work">
+			<section id="work" className="work">
 				<h1 className="display-4">My Work</h1>
 				<div className="my-work">
 					<table>
