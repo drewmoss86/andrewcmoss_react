@@ -58,7 +58,7 @@ section {
 	height: 100vh;
 	overflow: visible;
 	scroll-behavior: smooth;
-	scroll-snap-align: center; 
+	/* scroll-snap-align: center;  */
 }
 
 .content {
@@ -70,7 +70,7 @@ section {
 	/* max-width: 100%; */
 }
 
-.about {
+.about .container {
 	text-align: center;
 	position: absolute;
 	left: 50%;
@@ -82,34 +82,61 @@ section {
 
 #about {
 	position: relative;
-	background-image: url(../src/img/about_bg.jpg);
+	background: #2e3639;
 	color: white;
+	font-family: 'Ubuntu Mono', monospace;
 }
-
-#about .about-text {
-	background: #191919;
-    border-radius: 10px;
-    padding: 15px;
-    border: 1px solid #303030;
-    box-shadow: 0 0 8px #1b1b1b; 
-		text-align: left;
-		font-size: 13px;
+#about .about-header {
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 25px;
 }
-
-#about-group {
+#about .about-header > span {
+	color: #cee41f;
+}
+#about .about-console {
+	background: #1f1f1f;
+	padding: 15px;
+	text-align: left;
+	font-size: 15px;
+	color: #e2e2e2;
 	
 }
+#about .console-title-bar {
+	background: lightgray;
+	width: 100%;
+	height: 20px;
+	display: block;
+	border-radius: 5px 5px 0 0 ;
+}
+
+#about .about-console .comment {
+	color: gray;
+}
+
+#about .about-console .code-highlight {
+	color: #15ef31;
+}
+
+#about .about-console .string {
+	color: #0beee5;
+}
+
+#about .about-console .number {
+	color: #f43583;
+}
+
+/* #about-group {
+} */
 
 .profile-pic {
-	width: 100%;
-	height: auto;
 	/* transform: rotate(90deg);
 	-webkit-transform: rotate(90deg);
 	-moz-transoform: rotate(90deg); */
 	image-orientation: from-image;
 	border-radius: 100%;
-	height: 400px;
-	width: 400px;
+	height: auto;
+	width: 250px;
 }
 
 .home {
@@ -158,6 +185,22 @@ section {
 	transform: translateX(-50%) translateY(-50%);
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	-moz-transform: translateX(-50%) translateY(-50%);
+}
+
+#contact {
+	font-family: 'Ubuntu Mono', monospace;
+	background: #3e4c3e;
+}
+
+#contact .contact-header {
+		text-align: left;
+    color: #fff;
+    margin-bottom: 25px;
+		font-size: 2em;
+}
+
+.section-header > span {
+    color: #cee41f;
 }
 
 /* Navbar */

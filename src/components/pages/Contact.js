@@ -59,8 +59,8 @@ export default class Contact extends Component {
 	render() {
 		return (
 			<section id="contact" className="contact">
-				<h1 className="display-4">Contact Me</h1>
 				<div className="col-md-6 contact-form">
+					<h1 className="contact-header section-header">> andrewMoss.<span>contact</span>();</h1>
 					<form onSubmit={this.onSubmit} action="/add">
 						<div className="row">
 							<div className="col-md-6">
