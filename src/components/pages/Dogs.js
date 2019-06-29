@@ -12,12 +12,12 @@ export default class Dogs extends Component {
 					My dogs are my best friends. They are my life. I must master them as I must master my life. <br />
 					Without me, my dogs are homeless. Without my dogs, my life is pointless. </em>
 				</p>
-				<nav className="navbar dogs">
+				{/* <nav className="navbar dogs">
 					<ul>
 						<li><a href="#yoda">Yoda</a></li>
 						<li><a href="#lola">Lola</a></li>
 					</ul>
-				</nav>
+				</nav> */}
 			</section>
 		)
 	}

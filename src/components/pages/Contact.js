@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 // import uuid from 'uuid';
 import axios from 'axios';
-import Background from '../../img/header/cellphone-1786x358.jpg';
 
 export default class Contact extends Component {
 	constructor(props) {
@@ -61,7 +60,7 @@ export default class Contact extends Component {
 		return (
 			<section id="contact" className="contact">
 				<h1 className="display-4">Contact Me</h1>
-				<div className="contact-form">
+				<div className="col-md-6 contact-form">
 					<form onSubmit={this.onSubmit} action="/add">
 						<div className="row">
 							<div className="col-md-6">
