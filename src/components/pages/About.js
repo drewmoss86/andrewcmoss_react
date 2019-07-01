@@ -20,22 +20,32 @@ export default class About extends Component {
 							  <br />
 							  <p>
 									> andrewMoss.location;
-							  	<br/>&nbsp;&nbsp;&nbsp;
+							  	<br/>&nbsp;&nbsp;
 									> "Hacienda Heights, CA"
+								</p>
+
+								<p>
+									> andrewMoss.languages;
+									<br/>&nbsp;&nbsp;
+									> "English", "Chinese - Mandarin"
 								</p>
 
 							  <p>
 									> andrewMoss.education;
-							  	<br/>&nbsp;&nbsp;&nbsp;> [
-									<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#123; 
-									university: <span className="string">"Pasadena City College"</span>, graduated: <span className="number">2019</span>, major: <span className="string">"CIS"</span>, certificates: [<span className="string">"CIS - Programming"</span>, <span className="string">"CIS - Web Development"</span>] &#125;,
+							  	<br/>&nbsp;&nbsp;
+									> [<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+									&#123; university: <span className="string">"Pasadena City College"</span>, 
+									graduated: <span className="number">2019</span>, 
+									major: <span className="string">"CIS"</span>, 
+									certificates: [<span className="string">"CIS - Programming"</span>, 
+									<span className="string">"CIS - Web Development"</span>] &#125;,
 									<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#123; university: <span className="string">"California State University, Fullerton"</span>, graduated: <span className="number">2009</span>, major: <span className="string">"Finance"</span>, degree: <span className="string">"BA"</span> &#125;
-									<br/>&nbsp;&nbsp;&nbsp;&nbsp; &#125;]
+									<br/>&nbsp;&nbsp;&nbsp;&nbsp; ]
 								</p>
 
 								<p>
 									> andrewMoss.technologies;
-									<br/>&nbsp;&nbsp;&nbsp;
+									<br/>&nbsp;&nbsp;
 									> [<span className="string">"JavaScript"</span>, <span className="string">"Node"</span>, 
 											<span className="string">"PHP"</span>, <span className="string">"HTML5"</span>, 
 											<span className="string">"CSS3"</span>, <span className="string">"C++"</span>, 
@@ -51,7 +61,7 @@ export default class About extends Component {
 
 								<p>
 									> andrewMoss.passions;
-									<br/>&nbsp;&nbsp;&nbsp;
+									<br/>&nbsp;&nbsp;
 									> [<span className="string">"technology"</span>, <span className="string">"science fiction"</span>, 
 											<span className="string">"sushi"</span>, <span className="string">"caffeine"</span>, 
 											<span className="string">"IPAs"</span>]
