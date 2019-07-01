@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-// import uuid from 'uuid';
 import axios from 'axios';
+
+import { Form } from 'react-bootstrap';
 
 export default class Contact extends Component {
 	constructor(props) {
@@ -59,34 +60,36 @@ export default class Contact extends Component {
 	render() {
 		return (
 			<section id="contact" className="contact">
-				<div className="col-md-6 contact-form">
-					<h1 className="contact-header section-header">> andrewMoss.<span>contact</span>();</h1>
-					<form onSubmit={this.onSubmit} action="/add">
-						<div className="row">
-							<div className="col-md-6">
-								<div className="form-group">
-									<input type="text" name="name" className="form-control" placeholder="Enter your name*" value={this.state.name || ''} onChange={this.onChange} required /> <br />
-								</div>
-								<div className="form-group">
-									<input type="text" name="organization" className="form-control" placeholder="Enter your company name" value={this.state.organization || ''} onChange={this.onChange} /> <br />
-								</div>
-								<div className="form-group">
-									<input type="email" name="email" className="form-control" placeholder="Enter your email*" value={this.state.email || ''} onChange={this.onChange} required /> <br />
-								</div>
-								<div className="form-group">
-									<input type="tel" name="phone" className="form-control" placeholder="Enter your phone" value={this.state.phone || ''} onChange={this.onChange} /> <br />	
-								</div>
-							</div>				
-							<div className="col-md-6">
-								<div className="form-group">
-								<textarea name="message" className="form-control" placeholder="Enter your message*" value={this.state.message || ''} onChange={this.onChange} style={textAreaStyle} required ></textarea>
+				<div className="container contact-container">
+					<div className="col-md-6 contact-form">
+						<h1 className="contact-header section-header">> andrewMoss.<span>contact</span>();</h1>
+						<Form onSubmit={this.onSubmit} action="/add">
+							<div className="row">
+								<div className="col-md-6">
+									<div className="form-group">
+										<input type="text" name="name" className="form-control" placeholder="Enter your name*" value={this.state.name || ''} onChange={this.onChange} required /> <br />
+									</div>
+									<div className="form-group">
+										<input type="text" name="organization" className="form-control" placeholder="Enter your company name" value={this.state.organization || ''} onChange={this.onChange} /> <br />
+									</div>
+									<div className="form-group">
+										<input type="email" name="email" className="form-control" placeholder="Enter your email*" value={this.state.email || ''} onChange={this.onChange} required /> <br />
+									</div>
+									<div className="form-group">
+										<input type="tel" name="phone" className="form-control" placeholder="Enter your phone" value={this.state.phone || ''} onChange={this.onChange} /> <br />	
+									</div>
+								</div>				
+								<div className="col-md-6">
+									<div className="form-group">
+									<textarea name="message" className="form-control" placeholder="Enter your message*" value={this.state.message || ''} onChange={this.onChange} style={textAreaStyle} required ></textarea>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div className="form-group">
-							<input type="submit" name="submit" className="btn btn-primary" style={{width: '100px'}} value="Submit" />
-						</div>
-					</form>
+							<div className="form-group">
+								<input type="submit" name="submit" className="btn btn-primary" style={{width: '100px'}} value="Submit" />
+							</div>
+						</Form>
+					</div>
 				</div>
 			</section>
 		)
@@ -95,5 +98,5 @@ export default class Contact extends Component {
 
 const textAreaStyle = {
 	width: '100%',
-	height: '272px'
+	height: '276px'
 }
