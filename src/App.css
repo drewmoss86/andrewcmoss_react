@@ -96,6 +96,7 @@ section#home {
 	background: #2e3639;
 	color: white;
 	font-family: 'Ubuntu Mono', monospace;
+	min-height: 100vh;
 }
 #about .about-header {
     text-align: left;
@@ -166,7 +167,8 @@ section#home {
 #dogs {
 	position: relative;
 	background: #2e1e20;
-    color: white;	
+	color: white;	
+	min-height: 100vh;
 }
 
 .dogs-container {
@@ -199,6 +201,7 @@ section#home {
 .work {
 	background: #22211d;
 	color: white;
+	min-height: 100vh;
 }
 #work .mywork-header{
 	text-align: left;
@@ -257,6 +260,7 @@ section#home {
 #contact {
 	font-family: 'Ubuntu Mono', monospace;
 	background: #3e4c3e;
+	min-height: 100vh;
 }
 
 #contact .contact-header {

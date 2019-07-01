@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as BRouter } from 'react-router-dom';
+import { BrowserRouter as BRouter, Route} from 'react-router-dom';
 
 import Navbar from './components/Header';
 // import Smooth from './assets/smooth';
@@ -27,6 +27,7 @@ export default  class App extends Component {
 			<BRouter>
 				<div className="App">
 					<div className="content">
+						<Route path="/" component={Home} />
 						<Navbar />
 						<Home />
 						<About />
