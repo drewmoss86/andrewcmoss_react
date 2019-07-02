@@ -13,7 +13,6 @@ export default class About extends Component {
 							<div className="console-title-bar"></div>
 							<div className="about-console">
 								<p className="comment">
-									{/* // eslint-disable-next-line */}
 									// My name is <span className="code-highlight">@Andrew Moss</span> and I enjoy building things for 
 									the world wide web!
 								</p>
@@ -21,7 +20,7 @@ export default class About extends Component {
 							  <p>
 									> andrewMoss.location;
 							  	<br/>&nbsp;&nbsp;
-									> <string className="string">"Hacienda Heights, CA"</string>
+									> <span className="string">"Hacienda Heights, CA"</span>
 								</p>
 
 								<p>
