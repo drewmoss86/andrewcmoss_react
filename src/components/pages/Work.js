@@ -21,12 +21,12 @@ export default class Work extends Component {
 									<h4>CIMT <a target="_blank" rel="noopener noreferrer" href="http://cimt.us-west-2.elasticbeanstalk.com/login"><FontAwesomeIcon icon={faExternalLinkAlt} size="sm" /></a></h4>
 									<h6>This web application is a Campus Incident Management Tool (CIMT) that I built for my PHP/MySQL class.</h6>
 									
-									<p className="project-description body">
+									<p>
 									We were required to design and create the database with MySQL, develop the web application with PHP, utilizing any framework
 									and style accordingly to be visually appealing.
 									</p>
 
-									<p className="project-description footer">
+									<p>
 									Technologies used: PHP 7.2, Laravel 5.8, HTML5, CSS3, MySQL 5.7, JavaScript
 									</p>
 								</div>
@@ -39,7 +39,7 @@ export default class Work extends Component {
 							<a target="_blank" rel="noopener noreferrer" className="linkedin" href="https://www.linkedin.com/in/andrew-moss-91325016"> <FontAwesomeIcon icon={faLinkedin} size="3x" /></a>
 						</div>
 				</div>
-				</div>
+				</div>	
 			</section>
 		)
 	}

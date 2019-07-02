@@ -9,8 +9,8 @@ export default class Dogs extends Component {
 					<div className="my-dogs">
 						<div className="my-dogs-ode">
 							<p>
-								<em>These are my dogs. There are many like them, but these are mine. <br />
-								My dogs are my best friends. They are my life. I must master them as I must master my life. <br />
+								<em>These are my dogs. There are many like them, but these are mine. 
+								My dogs are my best friends. They are my life. I must master them as I must master my life. 
 								Without me, my dogs are homeless. Without my dogs, my life is pointless. </em>
 							</p>
 						</div>

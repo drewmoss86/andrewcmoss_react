@@ -1,43 +1,22 @@
-/* .App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-} */
-
 * {
 	margin: 0;
 	padding: 0;
 }
 
-
 .nav-item {
 	color: white;
 }
+
 html {
 	height: 100%;
 }
 
 body {
 	font-family: 'Ubuntu', sans-serif;
-	/* height: 100vh; */
 	line-height: 1.6;
 	width: 100%;
-    min-height: 100%;
-    overflow-x: hidden;
-	/* background: #333; */
+	min-height: 100%;
+	overflow-x: hidden;
 }
 
 .home-intro {
@@ -51,27 +30,14 @@ body {
 	padding: 0;
 }
 
-section {
-	/* display: block; */
-	/* display: flex;
-	flex-direction: row; */
-	/* align-items: center; */
-	/* justify-content: center; */
-	/* text-align: center;
-	width: 100%;
-	min-height: 100vh;
-	overflow: auto;
-	scroll-behavior: smooth; */
-	/* scroll-snap-align: center;  */
-}
 section#home {
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    flex-direction: column;
-    align-items: flex-start;
-    min-height: 100vh;
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	flex-direction: column;
+	align-items: flex-start;
+	min-height: 100vh;
 }
 
 .content {
@@ -80,7 +46,6 @@ section#home {
 	overflow-y: scroll;
 	scroll-behavior: smooth;
 	scroll-snap-type: y mandatory;
-	/* max-width: 100%; */
 }
 
 /*** About ***/
@@ -138,9 +103,6 @@ section#home {
 }
 
 .profile-pic {
-	/* transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	-moz-transoform: rotate(90deg); */
 	image-orientation: from-image;
 	border-radius: 100%;
 	height: auto;
@@ -169,7 +131,7 @@ section#home {
 	flex-direction: column;
 	margin: 0;
 	padding: 0;
-	text-align: center;
+	text-align: left;
 }
 
 #dogs {
@@ -188,7 +150,7 @@ section#home {
 	background-size: 196%;
 	background-position: 32%;
 	display: inline-block;
-	width: 420px;
+	width: 370px;
 	height: 370px;
 	border-radius: 100%;
 }
@@ -198,7 +160,7 @@ section#home {
 	background-size: 177%;
 	background-position: 43%;
 	display: inline-block;
-	width: 420px;
+	width: 370px;
 	height: 370px;
 	border-radius: 100%;
 
@@ -303,12 +265,6 @@ section#home {
 }
 
 .navbar {
-	/* position: fixed; */
-	/* top: 0; */
-	/* z-index: 1; */
-	/* display: flex; */
-	/* width: 100%; */
-	/* height: 60px; */
 	background-color: rgba(0,0,0,0.7) !important;
 }
 
@@ -430,11 +386,19 @@ ul.fly-in-text {
 
 @media screen and (max-width: 575px) {
 	.fly-in-text li {
-		font-size: 2em;
+		font-size: 25px;
+	}
+	.my-work {
+    display: block;
+	}
+
+	#work .project-image {
+    width: 100%;
 	}
 
 	#work .project-description {
-		text-align: center !important;
+		width: 100%;
+		padding: 15px;
 	}
 
 	#work .mywork-header, #dogs .dogs-header {
@@ -452,7 +416,8 @@ ul.fly-in-text {
 	}
 
 	.section-header {
-		font-size: 20px !important;
+		font-size: 24px !important;
+		margin-bottom: 20px;
 		text-align: center !important;
 	}
 
@@ -461,53 +426,55 @@ ul.fly-in-text {
 		align-items: center;
 	}
 
-	.fa-3x{
+	.fa-3x {
 		font-size: 2em;
 	}
 
 	#about {
 		min-height: 100vh;
+		padding: 0 15px;
 	}
 
-	.my-dogs-ode > p {
-		font-size: 8px;
+	.profile-pic {
+		margin-bottom: 20px;
+	}
+
+	.my-dogs-ode p {
+		font-size: 14px;
+		padding: 0 15px;
 	}
 
 	#yoda-pic, #lola-pic {
-		width: 545px;
-		height: 176px;
+		min-width: 176px;
+    min-height: 176px;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    margin: 15px auto;
+    display: block;
 	}
 
 	#yoda-bio > p, #lola-bio > p {
-		font-size: 10px;
+		font-size: 14px;
+	}
+
+	.lola, .yoda {
+    display: block;
+    flex-direction: none;
+    align-items: center;
+    margin: 0;
+	}
+
+	#lola-bio, #yoda-bio {
+		margin: 0;
+		padding: 0 15px;
 	}
 
 }
 
-
-@media screen and (max-width: 383px) {
+@media screen and (max-width: 320px) {
 	.fly-in-text li {
-		font-size: 15px;
+			font-size: 20px;
 	}
-
-	.fa-3x {
-		font-size: 1.5em;
-	}
-	#about .about-console{
-		font-size: 10px;
-	} 
-
-	#about {
-		min-height: 100vh;
-	}	
-
-	#yoda-pic, #lola-pic {
-		width: 545px;
-		height: 120px;
-	}
-
-	#yoda-bio > p, #lola-bio > p {
-		font-size: 5px;
-	}
-
 }
+
