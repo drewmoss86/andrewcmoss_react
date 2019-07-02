@@ -164,6 +164,14 @@ section#home {
 
 /* Dogs */
 
+.my-dogs {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
 #dogs {
 	position: relative;
 	background: #2e1e20;
@@ -175,26 +183,37 @@ section#home {
 	padding: 70px 0 50px;
 }
 
-#lola {
+#lola-pic {
 	background-image: url('../src/img/lola/lola-boston-snow-1.jpg');
-	background-size: 187%;
+	background-size: 196%;
 	background-position: 32%;
 	display: inline-block;
-	width: 300px;
-	height: 300px;
+	width: 420px;
+	height: 370px;
 	border-radius: 100%;
 }
 
-#yoda {
+#yoda-pic {
 	background-image: url('../src/img/yoda/Yoda_2.JPG');
 	background-size: 177%;
 	background-position: 43%;
 	display: inline-block;
-	width: 300px;
-	height: 300px;
+	width: 420px;
+	height: 370px;
 	border-radius: 100%;
+
+}
+.lola, .yoda {
+	display: inline-flex;
+	/* flex-direction: column; */
+	align-items: center;
+	margin: 50px;
 }
 
+#lola-bio, #yoda-bio {
+	margin: 50px;
+	text-align: left;
+}
 
 /*** Work ***/
 
@@ -387,6 +406,28 @@ ul.fly-in-text {
 	-moz-transform: translateX(100px) translateY(-200px);
 }
 
+@media screen and (max-width: 991px) {
+	#yoda-pic, #lola-pic {
+		width: 545px;
+		height: 320px;
+	}
+
+	#yoda-bio > p, #lola-bio > p {
+		font-size: 15px;
+	}	
+}
+
+@media screen and (max-width: 767px) {
+	#yoda-pic, #lola-pic {
+		width: 545px;
+		height: 215px;
+	}
+
+	#yoda-bio > p, #lola-bio > p {
+		font-size: 12px;
+	}	
+}
+
 @media screen and (max-width: 575px) {
 	.fly-in-text li {
 		font-size: 2em;
@@ -428,6 +469,19 @@ ul.fly-in-text {
 		min-height: 100vh;
 	}
 
+	.my-dogs-ode > p {
+		font-size: 8px;
+	}
+
+	#yoda-pic, #lola-pic {
+		width: 545px;
+		height: 176px;
+	}
+
+	#yoda-bio > p, #lola-bio > p {
+		font-size: 10px;
+	}
+
 }
 
 
@@ -446,5 +500,14 @@ ul.fly-in-text {
 	#about {
 		min-height: 100vh;
 	}	
+
+	#yoda-pic, #lola-pic {
+		width: 545px;
+		height: 120px;
+	}
+
+	#yoda-bio > p, #lola-bio > p {
+		font-size: 5px;
+	}
 
 }

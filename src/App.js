@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as BRouter, Route} from 'react-router-dom';
+import { BrowserRouter as BRouter } from 'react-router-dom';
 
 import Navbar from './components/Header';
 // import Smooth from './assets/smooth';
@@ -10,8 +10,6 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Work from './components/pages/Work';
 import Dogs from './components/pages/Dogs';
-// import Yoda from './components/dogs/Yoda';
-// import Lola from './components/dogs/Lola';
 import Contact from './components/pages/Contact';
 
 /** TODO: Add blog feature */
@@ -27,7 +25,6 @@ export default  class App extends Component {
 			<BRouter>
 				<div className="App">
 					<div className="content">
-						<Route path="/" component={Home} />
 						<Navbar />
 						<Home />
 						<About />
