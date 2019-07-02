@@ -36,7 +36,7 @@ export default class Work extends Component {
 						<div className="icons">
 							<a target="_blank" rel="noopener noreferrer" className="resume" href={Resume}> <FontAwesomeIcon icon={faFilePdf} size="3x" /></a>
 							<a target="_blank" rel="noopener noreferrer" className="github" href="https://github.com/drewmoss86"> <FontAwesomeIcon icon={faGithub} size="3x" /></a>
-							<a target="_blank" rel="noopener noreferrer" className="linkedin" href="https://www.linkedin.com/in/andrew-moss-91325016"> <FontAwesomeIcon icon={faLinkedin} size="3x" /></a>
+							<a target="_blank" rel="noopener noreferrer" className="linkedin" href="https://www.linkedin.com/in/andrew-cheng-moss/"> <FontAwesomeIcon icon={faLinkedin} size="3x" /></a>
 						</div>
 				</div>
 				</div>	
