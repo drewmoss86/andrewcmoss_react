@@ -15,11 +15,11 @@ export default class Work extends Component {
 						<div className="project-container">
 							<div className="project cimt">
 								<div className="project-image">
-									<img src={cimt} alt="cimt-img" />
+									<a target="_blank" rel="noopener noreferrer" href="http://cimt.us-west-2.elasticbeanstalk.com/login"><img src={cimt} alt="cimt-img" /></a>
 								</div>
 								<div className="project-description">
 									<h4>CIMT <a target="_blank" rel="noopener noreferrer" href="http://cimt.us-west-2.elasticbeanstalk.com/login"><FontAwesomeIcon icon={faExternalLinkAlt} size="sm" /></a></h4>
-									<h6>This web application is a Campus Incident Management Tool (CIMT) that I built for my PHP/MySQL class.</h6>
+									<p>This web application is a Campus Incident Management Tool (CIMT) that I built for my PHP/MySQL class.</p>
 									
 									<p>
 									We were required to design and create the database with MySQL, develop the web application with PHP, utilizing any framework
@@ -27,8 +27,8 @@ export default class Work extends Component {
 									</p>
 
 									<p>
-									Technologies used: PHP 7.2, Laravel 5.8, HTML5, CSS3, MySQL 5.7, JavaScript
-									</p>
+									Technologies used: </p>
+									<span className="code-pill">PHP 7.2</span> <span className="code-pill">Laravel 5.8</span> <span className="code-pill">HTML5</span> <span className="code-pill">CSS3</span> <span className="code-pill">MySQL</span> <span className="code-pill">JavaScript</span>
 								</div>
 							</div>
 						</div>

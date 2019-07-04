@@ -3,6 +3,26 @@
 	padding: 0;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+		background:black;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(48, 48, 48);
+	border-radius: 20px;
+	border: 1px solid black;
+  outline: 1px solid black;
+}
+::-webkit-scrollbar-button {
+	background: rgb(61, 61, 61);
+	border-radius: 20px;
+}
+textarea::-webkit-resizer {
+  background-color: transparent !important;
+}
 .nav-item {
 	color: white;
 }
@@ -46,6 +66,7 @@ section#home {
 	overflow-y: scroll;
 	scroll-behavior: smooth;
 	scroll-snap-type: y mandatory;
+	font-family: 'Ubuntu Mono', monospace;
 }
 
 /*** About ***/
@@ -71,14 +92,15 @@ section#home {
 #about .about-header > span {
 	color: #cee41f;
 }
-#about .about-console {
+#about .about-console,
+.contact-console {
 	background: #1f1f1f;
 	padding: 15px;
 	text-align: left;
 	font-size: 15px;
 	color: #e2e2e2;
 }
-#about .console-title-bar {
+.console-title-bar {
 	background: lightgray;
 	width: 100%;
 	height: 20px;
@@ -110,7 +132,7 @@ section#home {
 }
 
 .home {
-	background: url('./img/section-bkgrd/eclipse.jpg') no-repeat center center/cover;
+	background: url('./img/section-bkgrd/eclipse-1900.jpg') no-repeat center center/cover;
 	margin: 0 auto;
 	padding: 0;
 	position: relative;
@@ -187,6 +209,7 @@ section#home {
 #work .mywork-header{
 	text-align: left;
 	font-size: 2em;
+	margin-bottom: 0.7em;
 }
 #work .project.cimt img {
 	width: 80%;
@@ -194,6 +217,10 @@ section#home {
 }
 #work .project {
 	display: flex;
+	opacity: 0.5;
+}
+#work .project:hover {
+	opacity: 1;
 }
 #work .project-image {
 	width: 45%;
@@ -201,25 +228,48 @@ section#home {
 #work .project-description {
 	text-align: left;
 	width: 50%;
+	padding-top: 15px;
 }
-#work .project-description h1 {
-	  color: #5a5a5a;
+#work .project-description .code-pill {
+	background: #000000;
+	border: 1px solid #575757;
+	padding: 0 6px;
+	border-radius: 4px;
+	display: inline-block;
+	font-size: 14px;
+}
+#work .project-description h4 {
+	  color: white;
+		font-weight: bold;
     border-bottom: 1px dotted;
     display: block;
     width: 100%;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+		padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
+#work .project-description svg {
+	vertical-align: 0.1em;
+	    margin: 0 10px;
+}
+.icons {
+	margin: 20px 0;
+}
 .icons > a {
 	text-decoration: none;
 	padding: 10px;
+	color: #0beee5;
 }
-
-.project-description h4 a {
-	text-decoration: none;
+.icons > a:hover {
 	color: white;
+}
+.project-description a {
+	text-decoration: none;
+	color: #0beee5;
 	font-size: 16px;
+}
+.project-description a:hover {
+	color: white;
 }
 
 .project-description.body {
@@ -234,6 +284,7 @@ section#home {
 }
 
 /*** Contact ***/
+
 .contact-container {
 	padding: 70px 0 50px;
 }
@@ -249,6 +300,41 @@ section#home {
     color: #fff;
     margin-bottom: 25px;
 		font-size: 2em;
+}
+
+#contact input, #contact textarea {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid gray;
+	border-radius: unset;
+	padding: 0;
+	color: #0beee5;
+	height: 20px;
+}
+
+#contact textarea {
+	height: 100px;
+}
+
+#contact input:focus, #contact textarea:focus {
+	outline: none;
+	outline-style: none;
+	box-shadow: none;
+}
+
+#contact input[type=submit] {
+	padding: 5px 10px;
+	height: auto;
+	background: white;
+	color: black;
+	border-radius: 7px;
+	margin: 15px 0;
+	border-bottom: transparent;
+}
+
+#contact input[type="submit"]:hover {
+	background: black;
+	color: white;
 }
 
 .section-header > span {
@@ -316,46 +402,55 @@ ul.fly-in-text {
 	-webkit-transform: translateX(-200px) translateY(-200px);
 	-moz-transform: translateX(-200px) translateY(-200px);
 }
+
 .fly-in-text.hidden li:nth-child(2) {
 	transform: translateX(20px) translateY(100px);
 	-webkit-transform: translateX(20px) translateY(100px);
 	-moz-transform: translateX(20px) translateY(100px);
 }
+
 .fly-in-text.hidden li:nth-child(3) {
 	transform: translateX(-150px) translateY(-80px);
 	-webkit-transform: translateX(-150px) translateY(-80px);
 	-moz-transform: translateX(-150px) translateY(-80px);
 }
+
 .fly-in-text.hidden li:nth-child(4) {
 	transform: translateX(10px) translateY(-200px);
 	-webkit-transform: translateX(10px) translateY(-200px);
 	-moz-transform: translateX(10px) translateY(-200px);
 }
+
 .fly-in-text.hidden li:nth-child(5) {
 	transform: translateX(-300px) translateY(200px);
 	-webkit-transform: translateX(-300px) translateY(200px);
 	-moz-transform: translateX(-300px) translateY(200px);
 }
+
 .fly-in-text.hidden li:nth-child(6) {
 	transform: translateX(20px) translateY(-20px);
 	-webkit-transform: translateX(20px) translateY(-20px);
 	-moz-transform: translateX(20px) translateY(-20px);
 }
+
 .fly-in-text.hidden li:nth-child(8) {
 	transform: translateX(30px) translateY(200px);
 	-webkit-transform: translateX(30px) translateY(200px);
 	-moz-transform: translateX(30px) translateY(200px);
 }
+
 .fly-in-text.hidden li:nth-child(9) {
 	transform: translateX(-120px) translateY(20px);
 	-webkit-transform: translateX(-120px) translateY(20px);
 	-moz-transform: translateX(-120px) translateY(20px);
 }
+
 .fly-in-text.hidden li:nth-child(10) {
 	transform: translateX(50px) translateY(120px);
 	-webkit-transform: translateX(50px) translateY(120px);
 	-moz-transform: translateX(50px) translateY(120px);
 }
+
 .fly-in-text.hidden li:nth-child(11) {
 	transform: translateX(100px) translateY(-200px);
 	-webkit-transform: translateX(100px) translateY(-200px);
@@ -422,6 +517,7 @@ ul.fly-in-text {
 	}
 
 	#work .project {
+		opacity: 1;
 		flex-direction: column !important;
 		align-items: center;
 	}

@@ -27,7 +27,7 @@ export default class Dogs extends Component {
 								<div id="yoda-pic" className="yoda-pic"></div>
 									<div id="yoda-bio">
 										<p>Name: Yoda</p>
-										<p>Age: {Math.abs(new Date().getFullYear() - new Date(2011, 3, 29).getFullYear())}</p>
+										<p>Age: {Math.abs(new Date().getFullYear() - new Date(2012, 3, 29).getFullYear())}</p>
 										<p>Weight: 25 lbs</p>
 										<p>Enjoys: Short walks, barking at everything and  <br /> getting maximum treats with minimum effort</p>
 									</div>
