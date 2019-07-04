@@ -69,23 +69,23 @@ export default class Contact extends Component {
 								<div className="row">
 								<div className="col">
 									<div className="form-group">
-										<label>> Enter your name*</label>
+										<label>> Name*</label>
 										<input type="text" name="name" className="form-control" placeholder="" value={this.state.name || ''} onChange={this.onChange} required /> <br />
 									</div>
 									<div className="form-group">
-										<label>> Enter your company name</label>
+										<label>> Company</label>
 										<input type="text" name="organization" className="form-control" placeholder="" value={this.state.organization || ''} onChange={this.onChange} /> <br />
 									</div>
 									<div className="form-group">
-										<label>> Enter your email*</label>
+										<label>> Email*</label>
 										<input type="email" name="email" className="form-control" placeholder="" value={this.state.email || ''} onChange={this.onChange} required /> <br />
 									</div>
 									<div className="form-group">
-										<label>> Enter your phone</label>
-										<input type="tel" name="phone" className="form-control" placeholder="" value={this.state.phone || ''} onChange={this.onChange} /> <br />	
+										<label>> Phone</label>
+										<input type="tel" id="phone" name="phone" className="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10" placeholder="" value={this.state.phone || ''} onChange={this.onChange} /> <br />	
 									</div>
 									<div className="form-group">
-										<label>> Enter your message*</label>
+										<label>> Message*</label>
 										<textarea name="message" className="form-control" placeholder="" value={this.state.message || ''} onChange={this.onChange} style={textAreaStyle} required ></textarea>
 									</div>
 								</div>

@@ -289,6 +289,15 @@ section#home {
 	padding: 70px 0 50px;
 }
 
+#contact .form-group {
+	display: flex;
+}
+
+#contact label {
+	width: 120px;
+	display: flex;
+}
+
 #contact {
 	font-family: 'Ubuntu Mono', monospace;
 	background: #3e4c3e;
@@ -335,6 +344,10 @@ section#home {
 #contact input[type="submit"]:hover {
 	background: black;
 	color: white;
+}
+
+.row {
+	margin: 10px;
 }
 
 .section-header > span {
@@ -572,5 +585,6 @@ ul.fly-in-text {
 	.fly-in-text li {
 			font-size: 20px;
 	}
+
 }
 
