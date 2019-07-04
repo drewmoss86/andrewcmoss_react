@@ -42,7 +42,7 @@ export default class Contact extends Component {
 		}		
 
 		axios.post('/contact/add', newContact)
-			.then(res => alert(res.data));
+			.then(res => alert("Contact submitted!"));
 
 		//clear fields after submission
 		this.setState({ 
@@ -82,7 +82,7 @@ export default class Contact extends Component {
 									</div>
 									<div className="form-group">
 										<label>> Phone</label>
-										<input type="tel" id="phone" name="phone" className="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10" placeholder="" value={this.state.phone || ''} onChange={this.onChange} /> <br />	
+										<input type="tel" id="phone" name="phone" className="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12" placeholder="" value={this.state.phone || ''} onChange={this.onChange} /> <br />	
 									</div>
 									<div className="form-group">
 										<label>> Message*</label>

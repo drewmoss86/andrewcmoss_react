@@ -4,7 +4,7 @@ import { BrowserRouter as BRouter } from 'react-router-dom';
 import Navbar from './components/Header';
 // import Smooth from './assets/smooth';
 import FlyIn from './assets/animation';
-import ContactScript from './assets/contact';
+import ContactScript from './assets/autoformat-phone';
 
 import Home from './components/pages/Home';
 import About from './components/pages/About';
