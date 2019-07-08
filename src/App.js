@@ -5,6 +5,7 @@ import Navbar from './components/Header';
 // import Smooth from './assets/smooth';
 import FlyIn from './assets/animation';
 import ContactScript from './assets/autoformat-phone';
+import Collapse from './assets/navCollapse';
 
 import Home from './components/pages/Home';
 import About from './components/pages/About';

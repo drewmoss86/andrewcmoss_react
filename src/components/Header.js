@@ -4,10 +4,10 @@ import { Navbar, Nav } from 'react-bootstrap';
 export default class Header extends Component {
 	render() {
 		return (
-			<Navbar bg="dark" variant="dark" expand="sm" fixed="top">
+			<Navbar bg="dark" variant="dark" expand="sm" fixed="top" collapseOnSelect>
 				<Navbar.Toggle aria-controls="main-nav" />
 				<Navbar.Collapse id="main-nav">
-					<Nav className="mr-auto">
+					<Nav className="mr-auto main-nav">
 						<Nav.Link href="#home">Home</Nav.Link>
 						<Nav.Link href="#about">About</Nav.Link>
 						<Nav.Link href="#work">My Work</Nav.Link>
