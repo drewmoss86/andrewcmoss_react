@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import Resume from '../../files/AMResume062019_HH_IllustFormat.pdf';
+import Resume from '../../files/AMResume_01.pdf';
 import cimt from '../../img/cimt_screenshot_mobile.png';
 
 export default class Work extends Component {
