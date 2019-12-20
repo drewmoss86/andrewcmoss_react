@@ -43,7 +43,10 @@ export default class Contact extends Component {
 
     axios
       .post("/contact/add", newContact)
-      .then(res => alert("Contact submitted!"));
+      .then(res => alert("Contact submitted!"))
+      .catch(err => {
+        alert(err);
+      });
 
     //clear fields after submission
     this.setState({
