@@ -7,13 +7,13 @@ export default class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      contacts: [
-        name => "",
-        organization => "",
-        email => "",
-        phone => "",
-        message => ""
-      ]
+      // contacts: [
+      name: "",
+      organization: "",
+      email: "",
+      phone: "",
+      message: ""
+      // ]
     };
   }
 
