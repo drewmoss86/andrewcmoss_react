@@ -42,7 +42,7 @@
     "ckeditor": "^4.12.1",
     "ckeditor4-react": "^1.0.1",
     "core-js": "^3.5.0",
-    "jquery": "^1.12.4",
+    "jquery": "^3.5.0",
     "nodemon": "^2.0.2",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-scroll": "^1.7.14",
