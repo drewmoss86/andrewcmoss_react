@@ -147,8 +147,8 @@ section#home {
 }
 
 .home {
-  background: url("https://cdn1.andrewcmoss.com/img/section-bkgrd/eclipse-1900.jpg")
-    no-repeat center center/cover;
+  background: url("img/section-bkgrd/eclipse-1900.jpg") no-repeat center
+    center/cover;
   margin: 0 auto;
   padding: 0;
   position: relative;
@@ -184,7 +184,7 @@ section#home {
 }
 
 #lola-pic {
-  background-image: url("https://cdn1.andrewcmoss.com/img/lola/lola-boston-snow-1.jpg");
+  background-image: url("img/lola/lola-boston-snow-1.jpg");
   background-size: 196%;
   background-position: 32%;
   display: inline-block;
@@ -194,7 +194,7 @@ section#home {
 }
 
 #yoda-pic {
-  background-image: url("https://cdn1.andrewcmoss.com/img/yoda/Yoda_2.JPG");
+  background-image: url("img/yoda/Yoda_2.JPG");
   background-size: 177%;
   background-position: 43%;
   display: inline-block;

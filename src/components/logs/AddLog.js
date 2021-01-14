@@ -102,7 +102,7 @@ export default class AddLog extends Component {
 
 const logHeaderStyle = {
   // backgroundImage: `url(${Background})`,
-  backgroundImage: "https://cdn1.andrewcmoss.com/img/header/home-bg.jpg",
+  backgroundImage: "img/header/home-bg.jpg",
   padding: "156px 0 100px",
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover"

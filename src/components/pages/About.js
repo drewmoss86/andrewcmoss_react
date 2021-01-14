@@ -83,7 +83,7 @@ export default class About extends Component {
                   > andrewMoss.resume;
                   <br />
                   &nbsp;&nbsp;&nbsp;>{" "}
-                  <a href="https://cdn1.andrewcmoss.com/files/AMResume_01.pdf">
+                  <a href="files/AMResume_01.pdf">
                     Resume.pdf
                   </a>
                 </p>

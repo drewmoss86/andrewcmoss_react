@@ -25,7 +25,7 @@ export default class Work extends Component {
                     href="http://cimt.us-west-2.elasticbeanstalk.com/login"
                   >
                     <img
-                      src="https://cdn1.andrewcmoss.com/img/cimt_screenshot_mobile.png"
+                      src="img/cimt_screenshot_mobile.png"
                       alt="cimt-img"
                     />
                   </a>
@@ -66,7 +66,7 @@ export default class Work extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="resume"
-                href="https://cdn1.andrewcmoss.com/files/AMResume_01.pdf"
+                href="files/AMResume_01.pdf"
               >
                 {" "}
                 <FontAwesomeIcon icon={faFilePdf} size="3x" />
