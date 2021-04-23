@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Resume from "../../files/AMResume062019_HH_IllustFormat.pdf";
+import Resume from "../../files/ANDREW_MOSS_RESUME_04222021.pdf";
 
 export default class About extends Component {
   render() {
@@ -28,7 +28,7 @@ export default class About extends Component {
                   > andrewMoss.location;
                   <br />
                   &nbsp;&nbsp; >{" "}
-                  <span className="string">"Hacienda Heights, CA"</span>
+                  <span className="string">"Pasadena, CA"</span>
                 </p>
 
                 <p>
@@ -65,8 +65,8 @@ export default class About extends Component {
                 <p>
                   > andrewMoss.technologies;
                   <br />
-                  &nbsp;&nbsp; > [&nbsp;
-                  <span className="string">"JavaScript"</span>,{" "}
+                  &nbsp;&nbsp; > [<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span className="string">"JavaScript"</span>,{" "}
                   <span className="string">"Node"</span>,
                   <span className="string"> "PHP"</span>,{" "}
                   <span className="string">"HTML5"</span>,
@@ -76,14 +76,22 @@ export default class About extends Component {
                   <span className="string">"Oracle"</span>,
                   <span className="string"> "MS SQL"</span>,{" "}
                   <span className="string">"MySQL"</span>,
-                  <span className="string"> "Ruby"</span>&nbsp;]
+                  <span className="string"> "RoR"</span>, 
+                  <span className="string"> "Python"</span>, 
+                  <span className="string"> "ColdFusion"</span>, 
+                  <span className="string"> "PowerON"</span>, 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span className="string"> "React"</span>, 
+                  <span className="string"> "JQuery"</span>,
+                  <span className="string"> "Bootstrap"</span>,
+                  <span className="string"> "Laravel"</span>
+                  <br/>&nbsp;&nbsp;&nbsp;&nbsp; ]
                 </p>
 
                 <p>
                   > andrewMoss.resume;
                   <br />
                   &nbsp;&nbsp;&nbsp;>{" "}
-                  <a href="files/AMResume_01.pdf">
+                  <a href={Resume}>
                     Resume.pdf
                   </a>
                 </p>

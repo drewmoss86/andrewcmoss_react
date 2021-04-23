@@ -5,7 +5,7 @@ import {
   faExternalLinkAlt
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import Resume from "../../files/AMResume_01.pdf";
+import Resume from "../../files/ANDREW_MOSS_RESUME_04222021.pdf";
 import cimt from "../../img/cimt_screenshot_mobile.png";
 export default class Work extends Component {
   render() {
@@ -25,7 +25,7 @@ export default class Work extends Component {
                     href="http://cimt.us-west-2.elasticbeanstalk.com/login"
                   >
                     <img
-                      src="img/cimt_screenshot_mobile.png"
+                      src={cimt}
                       alt="cimt-img"
                     />
                   </a>
@@ -66,7 +66,7 @@ export default class Work extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="resume"
-                href="files/AMResume_01.pdf"
+                href={Resume}
               >
                 {" "}
                 <FontAwesomeIcon icon={faFilePdf} size="3x" />
