@@ -6,7 +6,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Resume from "../../files/ANDREW_MOSS_RESUME_04222021.pdf";
-import cimt from "../../img/cimt_screenshot_mobile.png";
+import cimt from require("../../img/cimt_screenshot_mobile.png");
 export default class Work extends Component {
   render() {
     return (
