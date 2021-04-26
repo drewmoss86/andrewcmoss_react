@@ -22,10 +22,10 @@ export default class Work extends Component {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="http://cimt.us-west-2.elasticbeanstalk.com/login"
+                    href="http://ec2-3-142-147-165.us-east-2.compute.amazonaws.com/login"
                   >
                     <img
-                      src={require(cimt)}
+                      src={cimt}
                       alt="cimt-img"
                     />
                   </a>
@@ -36,9 +36,9 @@ export default class Work extends Component {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="http://cimt.us-west-2.elasticbeanstalk.com/login"
+                      href="http://ec2-3-142-147-165.us-east-2.compute.amazonaws.com/login"
                     >
-                      <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
+                      <FontAwesomeIcon icon={faExternalLinkAlt} size="sm"/>
                     </a>
                   </h4>
                   <p>

@@ -45,7 +45,7 @@ export default class Contact extends Component {
       .post("/contact/add", newContact)
       .then(res => alert("Contact submitted!"))
       .catch(err => {
-        alert(err);
+        console.log(err);
       });
 
     //clear fields after submission
@@ -118,7 +118,6 @@ export default class Contact extends Component {
                         id="phone"
                         name="phone"
                         className="form-control"
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                         maxLength="12"
                         placeholder=""
                         value={this.state.phone || ""}
